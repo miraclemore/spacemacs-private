@@ -29,34 +29,19 @@
 
 ;;; Code:
 
-(defconst miraclemore-programming-packages
-  '()
-  "The list of Lisp packages required by the miraclemore-programming layer.
+(setq miraclemore-programming-packages
+  '(
+    ;; (cc-mode :location built-in)
+    ;; (python :location built-in)
+    lispy
+    ;; (emacs-lisp :location built-in)
+    ))
 
-Each entry is either:
-
-1. A symbol, which is interpreted as a package to be installed, or
-
-2. A list of the form (PACKAGE KEYS...), where PACKAGE is the
-    name of the package to be installed or loaded, and KEYS are
-    any number of keyword-value-pairs.
-
-    The following keys are accepted:
-
-    - :excluded (t or nil): Prevent the package from being loaded
-      if value is non-nil
-
-    - :location: Specify a custom installation location.
-      The following values are legal:
-
-      - The symbol `elpa' (default) means PACKAGE will be
-        installed using the Emacs package manager.
-
-      - The symbol `local' directs Spacemacs to load the file at
-        `./local/PACKAGE/PACKAGE.el'
-
-      - A list beginning with the symbol `recipe' is a melpa
-        recipe.  See: https://github.com/milkypostman/melpa#recipe-format")
-
-
+(defun miraclemore-programming/init-lispy ()
+  (message "miraclemore-programming/init-lispy")
+  (use-package lispy
+    :defer t
+    :init
+    :config
+    ))
 ;;; packages.el ends here

@@ -1,3 +1,6 @@
-(configuration-layer/declare-layer '(
-                                     miraclemore-ui
-                                     miraclemore-programming))
+(configuration-layer/declare-layers
+ '(
+   miraclemore-programming
+   miraclemore-ui
+   ))
+
