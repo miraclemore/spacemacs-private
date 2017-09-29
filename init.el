@@ -308,6 +308,8 @@ before packages are loaded. If you are unsure, you should try in setting them in
 `dotspacemacs/user-config' first."
   (setq tramp-ssh-controlmaster-options
         "-o ControlMaster=auto -o ControlPath='tramp.%%C' -o ControlPersist=no")
+  (setq-default git-magit-status-fullscreen t)
+  (global-git-commit-mode t)
   )
 
 (defun dotspacemacs/user-config ()
