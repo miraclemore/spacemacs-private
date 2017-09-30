@@ -1,6 +1,6 @@
 ;;; packages.el --- miraclemore layer packages file for Spacemacs.
 ;;
-;; Copyright (c) 2017-2018 Miracle Huang
+;; Copyright (c) 2017 Miracle Huang
 ;;
 ;; Author: miracle.huang<miraclemore.huang@gmail.com>
 ;; URL:
