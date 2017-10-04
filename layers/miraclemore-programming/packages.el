@@ -31,15 +31,32 @@
 
 (setq miraclemore-programming-packages
   '(
-    ;; (cc-mode :location built-in)
+    (cc-mode :location built-in)
     ;; (python :location built-in)
     lispy
+    helm-ls-git
     ;; (emacs-lisp :location built-in)
     ))
+
+(defun miraclemore-programming/post-init-cc-mode ()
+  (message "miraclemore-programming/post-init-cc-mode")
+  (progn
+    (message "init-cc-mode set default c style to linux")
+    (setq-default c-default-style "linux")
+    (miraclemore-common-cc-mode-setup))
+  )
 
 (defun miraclemore-programming/init-lispy ()
   (message "miraclemore-programming/init-lispy")
   (use-package lispy
+    :defer t
+    :init
+    :config
+    ))
+
+(defun miraclemore-programming/init-helm-ls-git ()
+  (message "miraclemore-programming/init-helm-ls-git")
+  (use-package helm-ls-git
     :defer t
     :init
     :config

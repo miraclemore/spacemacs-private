@@ -24,4 +24,11 @@
         (projectile-find-file)
       (counsel-file-jump))))
 
+(defun miraclemore/open-file-with-helm-git ()
+  (interactive)
+  (if (miraclemore/git-project-root)
+      (helm-ls-git-ls)
+    (if (projectile-project-p)
+        (projectile-find-file)
+      (counsel-file-jump))))
 ;;; funcs.el ends here

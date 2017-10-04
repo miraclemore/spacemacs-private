@@ -36,7 +36,7 @@ values."
      ;; Uncomment some layer names and press <SPC f e R> (Vim style) or
      ;; <M-m f e R> (Emacs style) to install them.
      ;; ----------------------------------------------------------------
-     ivy
+     helm
      auto-completion
      (better-defaults :variables
                       better-defaults-move-to-beginning-of-code-first t)
@@ -337,6 +337,7 @@ you should place your code here."
   (setcdr evil-insert-state-map nil)
   (define-key evil-insert-state-map [escape] 'evil-normal-state)
   (setq powerline-default-separator 'arrow)
+  (require 'helm-bookmark)
   )
 
 (setq custom-file (expand-file-name "custom.el" dotspacemacs-directory))
