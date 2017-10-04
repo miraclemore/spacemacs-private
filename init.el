@@ -41,6 +41,7 @@ values."
      (better-defaults :variables
                       better-defaults-move-to-beginning-of-code-first t)
      colors
+     ibuffer
      emacs-lisp
      git
      markdown
@@ -49,6 +50,7 @@ values."
      c-c++
      gtags
      python
+     imenu-list
      ;; (shell :variables
      ;;        shell-default-height 30
      ;;        shell-default-position 'bottom)
