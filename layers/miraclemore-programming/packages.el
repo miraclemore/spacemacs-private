@@ -41,10 +41,9 @@
 (defun miraclemore-programming/post-init-cc-mode ()
   (message "miraclemore-programming/post-init-cc-mode")
   (progn
-    (message "init-cc-mode set default c style to linux")
-    (setq-default c-default-style "linux")
-    (miraclemore-common-cc-mode-setup))
-  )
+    (add-hook 'c++-mode-hook 'miraclemore-common-cc-mode-setup)
+    (add-hook 'c-mode-hook 'miraclemore-common-cc-mode-setup)
+  ))
 
 (defun miraclemore-programming/init-lispy ()
   (message "miraclemore-programming/init-lispy")

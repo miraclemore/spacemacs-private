@@ -1,5 +1,8 @@
 
 (defun miraclemore-common-cc-mode-setup ()
+  (interactive)
+
+  (setq-default c-default-style "linux")
   (setq c-basic-offset 4)
 
   ;; give me NO newline automatically after electric expressions are entered
