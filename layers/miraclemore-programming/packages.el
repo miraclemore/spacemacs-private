@@ -33,20 +33,19 @@
   '(
     (cc-mode :location built-in)
     ;; (python :location built-in)
+    ;; irony
     lispy
     helm-ls-git
     ;; (emacs-lisp :location built-in)
     ))
 
 (defun miraclemore-programming/post-init-cc-mode ()
-  (message "miraclemore-programming/post-init-cc-mode")
   (progn
     (add-hook 'c++-mode-hook 'miraclemore-common-cc-mode-setup)
     (add-hook 'c-mode-hook 'miraclemore-common-cc-mode-setup)
   ))
 
 (defun miraclemore-programming/init-lispy ()
-  (message "miraclemore-programming/init-lispy")
   (use-package lispy
     :defer t
     :init
@@ -54,7 +53,6 @@
     ))
 
 (defun miraclemore-programming/init-helm-ls-git ()
-  (message "miraclemore-programming/init-helm-ls-git")
   (use-package helm-ls-git
     :defer t
     :init

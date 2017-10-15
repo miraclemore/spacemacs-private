@@ -13,7 +13,6 @@
 
 (defun miraclemore/git-project-root ()
   (let ((directory default-directory))
-    (message "miraclemore/git-project-root")
     (locate-dominating-file directory ".git")))
 
 (defun miraclemore/open-file-with-counsel-git ()

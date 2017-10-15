@@ -35,7 +35,6 @@
     ))
 
 (defun miraclemore/post-init-projectile ()
-    (message "miralcemore/post-init-projectile")
     ;; (progn
     ;;   (with-eval-after-load 'projectile
     ;;     (progn
