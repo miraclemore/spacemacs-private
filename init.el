@@ -40,6 +40,9 @@ values."
      auto-completion
      (better-defaults :variables
                       better-defaults-move-to-beginning-of-code-first t)
+     (treemacs :variables
+               treemacs-use-filewatch-mode t
+               treemacs-use-collapsed-directories 3)
      colors
      ibuffer
      emacs-lisp
