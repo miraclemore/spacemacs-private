@@ -43,7 +43,6 @@ values."
      (treemacs :variables
                treemacs-use-filewatch-mode t
                treemacs-use-collapsed-directories 3)
-     colors
      ibuffer
      emacs-lisp
      git
@@ -318,10 +317,10 @@ executes.
 before packages are loaded. If you are unsure, you should try in setting them in
 `dotspacemacs/user-config' first."
 
-  (setq configuration-layer--elpa-archives
-        '(("melpa-cn" . "http://elpa.emacs-china.org/melpa/")
-          ("org-cn"   . "http://elpa.emacs-china.org/org/")
-          ("gnu-cn"   . "http://elpa.emacs-china.org/gnu/")))
+  ;; (setq configuration-layer--elpa-archives
+  ;; (("melpa-cn" . "http://elpa.emacs-china.org/melpa/")
+  ;;  ("org-cn"   . "http://elpa.emacs-china.org/org/")
+  ;;  ("gnu-cn"   . "http://elpa.emacs-china.org/gnu/")))
 
   (setq tramp-ssh-controlmaster-options
         "-o ControlMaster=auto -o ControlPath='tramp.%%C' -o ControlPersist=no")
