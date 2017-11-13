@@ -9,5 +9,4 @@
 ;;
 ;;; License: GPLv3
 
-;; replace <gtags-map> with correct keymap variable (`helm-gtags-mode-map'?)
-(evil-define-key 'normal <gtags-map> (kbd "M-.") 'spacemacs/jump-to-definition)
+(define-key evil-normal-state-map (kbd "M-.") 'helm-gtags-dwim)
