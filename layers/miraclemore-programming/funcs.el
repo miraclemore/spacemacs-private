@@ -36,8 +36,8 @@
 
 (defun miracle-c-mode-setup ()
   (miraclemore-common-cc-mode-setup)
-  (setq c-c++-default-mode-for-headers c-mode))
+  (setq c-c++-default-mode-for-headers 'c-mode))
 
 (defun miracle-c++-mode-setup ()
   (miraclemore-common-cc-mode-setup)
-  (setq c-c++-default-mode-for-headers c++-mode))
+  (setq c-c++-default-mode-for-headers 'c++-mode))

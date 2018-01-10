@@ -41,8 +41,8 @@
 
 (defun miraclemore-programming/post-init-cc-mode ()
   (progn
-    (add-hook 'c++-mode-hook 'miraclemore-common-c-mode-setup)
-    (add-hook 'c-mode-hook 'miraclemore-common-c++-mode-setup)
+    (add-hook 'c++-mode-hook 'miracle-c-mode-setup)
+    (add-hook 'c-mode-hook 'miracle-c++-mode-setup)
   ))
 
 (defun miraclemore-programming/init-lispy ()
