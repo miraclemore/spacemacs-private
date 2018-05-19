@@ -35,14 +35,14 @@
     ))
 
 (defun miraclemore/post-init-projectile ()
+  (progn
+    (with-eval-after-load 'projectile
+      (progn
+        (setq projectile-completion-system 'ivy)
+        (spacemacs/set-leader-keys "pf" 'miraclemore/open-file-with-counsel-git)))))
     ;; (progn
     ;;   (with-eval-after-load 'projectile
     ;;     (progn
-    ;;       (setq projectile-completion-system 'ivy)
-    ;;       (spacemacs/set-leader-keys "pf" 'miraclemore/open-file-with-counsel-git)))))
-    (progn
-      (with-eval-after-load 'projectile
-        (progn
-          (setq projectile-completion-system 'helm)
-          (spacemacs/set-leader-keys "pf" 'miraclemore/open-file-with-helm-git)))))
+    ;;       (setq projectile-completion-system 'helm)
+    ;;       (spacemacs/set-leader-keys "pf" 'miraclemore/open-file-with-helm-git)))))
 ;;; packages.el ends here
